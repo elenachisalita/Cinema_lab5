@@ -1,0 +1,8 @@
+package java.Repository;
+
+public class RepositoryException extends RuntimeException{
+
+    public RepositoryException(String message){
+        super("RepositoryException ||| " + message);
+    }
+}

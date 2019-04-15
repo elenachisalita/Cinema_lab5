@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" prefHeight="456.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="UI.ClientAddController">
+    <VBox>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="402.0" text="Add client:" textAlignment="CENTER">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Separator prefWidth="200.0" />
+        <HBox alignment="CENTER" prefHeight="369.0" prefWidth="402.0">
+            <children>
+                <VBox prefHeight="301.0" prefWidth="202.00009999999747">
+                    <children>
+                        <Label alignment="CENTER" prefWidth="201.0" text="Id" textAlignment="CENTER">
+                            <font>
+                                <Font size="18.0" fx:id="x1" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="First Name" textAlignment="CENTER" />
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Last Name" textAlignment="CENTER" />
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="CNP" textAlignment="CENTER" />
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Birthday Year" textAlignment="CENTER" />
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Birthday Month" textAlignment="CENTER" />
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Birthday Day" textAlignment="CENTER" />
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Registartion Year" textAlignment="CENTER" />
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Registration Month" textAlignment="CENTER" />
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Registration Day" textAlignment="CENTER" />
+                        <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Points" textAlignment="CENTER" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="369.0" prefWidth="187.0">
+                    <children>
+                        <TextField id="txtId" fx:id="spnId" prefWidth="200.0" />
+                        <TextField id="txtId" fx:id="txtFirstName" prefWidth="200.0" />
+                        <TextField id="txtReleaseYear" fx:id="txtLastName" prefWidth="200.0" />
+                        <TextField id="txtPrice" fx:id="txtCNP" prefWidth="200.0" />
+                        <TextField id="txtPrice" fx:id="txtBirthdayYear" prefWidth="200.0" />
+                        <TextField id="txtPrice" fx:id="txtBirthdayMonth" prefWidth="200.0" />
+                        <TextField id="txtPrice" fx:id="txtBirthdayDay" prefWidth="200.0" />
+                        <TextField id="txtReleaseYear" fx:id="txtRegistrationYear" prefWidth="200.0" />
+                        <TextField id="txtId" fx:id="txtRegistrationMonth" prefWidth="200.0" />
+                        <TextField id="txtId" fx:id="txtRegistrationDay" prefWidth="200.0" />
+                        <TextField id="txtId" fx:id="txtPoints" prefWidth="200.0" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Separator prefWidth="200.0" />
+        <Button id="btnMovieAdd" fx:id="btnAdd" contentDisplay="CENTER" onAction="#btnClientInsertClick" text="Add" textAlignment="CENTER" textOverrun="CLIP" />
+        <Button id="btnMovieAdd" fx:id="btnCancel" contentDisplay="CENTER" onAction="#btnCancelClick" text="Cancel" textAlignment="CENTER" textOverrun="CLIP" />
+    </VBox>
+</HBox>
